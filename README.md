@@ -8,6 +8,10 @@ Completed chapter 1:
 
 Learned about Cargo
 
+cargo new <PROJECT_ROOT>
+
+Creates a new Rust project in PROJECT_ROOT (creates the directory PROJECT_ROOT if it does not exist)
+
 cargo build and cargo build --release
 
 cargo run for debugging
