@@ -10,8 +10,73 @@ fn main() {
 
     section3_2();
 
-    let text: &str = section3_3(6, 4.5, "string of text");
-    println!(&text)
+    section3_3(6, 4.5, "string of text");
+
+    section3_5();
+}
+
+// https://doc.rust-lang.org/book/ch03-05-control-flow.html
+fn section3_5() {
+    println!("Section 3.5 Control Flow");
+    let num = 5;
+    if num < 7 {
+        println!("Condition true");
+    } else {
+        println!("Condition false");
+    }
+
+    let condition = true;
+    let value = if condition {6} else {10};
+    println!("Conditional set is {value}");
+
+    let mut counter = 0;
+
+    let result = loop {
+        counter += 1;
+
+        if counter == 10 {
+            break counter * 2;
+        }
+    };
+
+    println!("Counter {result}");
+
+    // loops and loop labels
+    let mut count = 0;
+    'counting_up: loop {
+        println!("count = {count}");
+        let mut remaining = 10;
+
+        loop {
+            println!("remaining = {remaining}");
+            if remaining == 9 {
+                break;
+            }
+
+            if count == 2 {
+                break 'counting_up;
+            }
+
+            remaining -= 1;
+        }
+
+        count += 1;
+    }
+
+    // while loop
+    while false {
+        println!("this will never happen");
+    }
+
+    let array = [1, 3, 4, 6, 7, 8, 10];
+    for i in array {
+        println!("{i}");
+    }
+
+    // print 98, 97, ... 2, 1
+    for number in (1..99).rev() {
+        println!("{number}");
+    }
 }
 
 // https://doc.rust-lang.org/book/ch03-03-how-functions-work.html
