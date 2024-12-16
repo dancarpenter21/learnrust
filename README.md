@@ -23,3 +23,7 @@ Completed the guessing game.
 Learned about crates, Crates.io, dependencies .toml file.
 
 Worked with references, data types, match, Ordering
+
+Completed chapter 3:
+
+Learned basic syntax around control flow, loops, conditionals, variable mutability, functions, and data types
