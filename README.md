@@ -27,3 +27,9 @@ Worked with references, data types, match, Ordering
 Completed chapter 3:
 
 Learned basic syntax around control flow, loops, conditionals, variable mutability, functions, and data types
+
+Completed chapter 4:
+
+Learned about references and borrowing. Use { } to manipulate scope if needed.
+ - At any given time, you can have either one mutable reference or any number of immutable references.
+ - References must always be valid.
