@@ -33,3 +33,7 @@ Completed chapter 4:
 Learned about references and borrowing. Use { } to manipulate scope if needed.
  - At any given time, you can have either one mutable reference or any number of immutable references.
  - References must always be valid.
+
+ Completed chapter 5:
+
+ Structs let you create custom types that are meaningful for your domain. By using structs, you can keep associated pieces of data connected to each other and name each piece to make your code clear. In impl blocks, you can define functions that are associated with your type, and methods are a kind of associated function that let you specify the behavior that instances of your structs have.
