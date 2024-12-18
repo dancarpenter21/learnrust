@@ -14,6 +14,9 @@ fn main() {
 
     //let reference_to_nothing = dangle();  // fails to compile
     let _reference_to_nothing = dangle_correct();
+
+    println!("Section 4.3 Slices");
+    slices();
 }   // predictably, scope for 's' ends here
 
 fn heap_action() {
@@ -142,4 +145,58 @@ fn dangle_correct() -> String {
     // have to do it like this, give back ownership
     let s = String::from("not dangling");
     s
+}
+
+// https://doc.rust-lang.org/book/ch04-03-slices.html
+fn slices() {
+    let cases = [
+        String::from("onebigword"),
+        String::from("just onespace"),
+        String::from("at least a couple spaces")
+    ];
+
+    for case in &cases {
+        let value = first_word(&case);
+        println!("first word case {case} -> {value}");
+    }
+
+    for case in &cases {
+        let value = second_word(&case);
+        println!("second word case {case} -> {value}");
+    }
+}
+
+// Here’s a small programming problem: write a function that takes a string of words
+// separated by spaces and returns the first word it finds in that string.
+// If the function doesn’t find a space in the string, the whole string must be one word,
+// so the entire string should be returned.
+fn first_word(s: &str) -> &str {
+    let bytes = s.as_bytes();
+
+    for (i, &item) in bytes.iter().enumerate() {
+        if item == b' ' {
+            return &s[0..i];
+        }
+    }
+
+    return &s[..];
+}
+
+fn second_word(s: &str) -> &str {
+    let bytes = s.as_bytes();
+
+    let mut first_space = 0;
+    let mut second_space = s.len();
+    for (i, &item) in bytes.iter().enumerate() {
+        if item == b' ' {
+            if first_space == 0 {
+                first_space = i;
+            } else {
+                second_space = i;
+                break
+            }
+        }
+    }
+
+    return &s[first_space..second_space];
 }
