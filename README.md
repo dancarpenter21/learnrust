@@ -47,3 +47,8 @@ Your Rust programs can now express concepts in your domain using structs and enu
 In order to provide a well-organized API to your users that is straightforward to use and only exposes exactly what your users will need, let’s now turn to Rust’s modules.
 
 'if let' seems weird, but not super important.
+
+Completed chapter 7:
+
+Not a lot of code written, good to keep this chapter handy as a reference for organizing a real project once it's time.
+
