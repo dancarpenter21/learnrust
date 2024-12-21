@@ -52,3 +52,9 @@ Completed chapter 7:
 
 Not a lot of code written, good to keep this chapter handy as a reference for organizing a real project once it's time.
 
+Completed chapter 8:
+
+Noted that slicing strings, did some cool stuff with hashmaps.
+
+
+
