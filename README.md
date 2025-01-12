@@ -64,4 +64,14 @@ Completed chapter 10:
 
 Some stuff that will definitely need to be revisited regarding lifetime syntax and concepts.
 
+Completed chapter 11:
+
+Learned about 'cargo test -- --show-output'
+
+Run single test 'cargo test NAME' or 'cargo test SUBNAME'
+
+Ignore some tests with '#[ignore]'
+
+Refer back to https://doc.rust-lang.org/book/ch11-03-test-organization.html for organization ideas.
+
 
