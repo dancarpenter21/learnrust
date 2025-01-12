@@ -56,5 +56,12 @@ Completed chapter 8:
 
 Noted that slicing strings, did some cool stuff with hashmaps.
 
+Completed chapter 9:
+
+Of particular interest https://doc.rust-lang.org/book/ch09-03-to-panic-or-not-to-panic.html
+
+Completed chapter 10:
+
+Some stuff that will definitely need to be revisited regarding lifetime syntax and concepts.
 
 
