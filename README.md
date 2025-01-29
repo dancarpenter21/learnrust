@@ -74,4 +74,4 @@ Ignore some tests with '#[ignore]'
 
 Refer back to https://doc.rust-lang.org/book/ch11-03-test-organization.html for organization ideas.
 
-
+Completed chapter 12, minigrep. Didn't implement env variables.
